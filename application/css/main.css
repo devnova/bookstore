@@ -7,6 +7,12 @@ body {
     background-color: #4c4c4c;
 }
 
+input {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
 input[type = "text"], input[type = "password"] {
     padding: 6px;
     margin: 4px;
@@ -17,10 +23,21 @@ input[type = "text"], input[type = "password"] {
     color: #1d1d1d;
     width: 100%;
     font-weight: bold;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 input:focus {
     outline: 0;
+}
+
+.imgVAM img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.inputBold {
+    font-weight: bold;
 }
 
 input[type = "text"]:focus, input[type = "password"]:focus {
@@ -30,8 +47,9 @@ input[type = "text"]:focus, input[type = "password"]:focus {
 }
 
 input[type = "submit"] {
-    margin: 4px;
-    padding: 8px;
+    padding: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: #5f5f5f;
     border-radius: 4px;
     border: 1px solid #272727;
@@ -41,6 +59,7 @@ input[type = "submit"] {
     color: #1e1e1e;
     text-shadow: 1px 1px 0 #686868;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .topMenu {
@@ -106,6 +125,10 @@ input[type = "submit"] {
     box-sizing: border-box;
 }
 
+.clear {
+    clear: both;
+}
+
 .bottom {
     margin: 4px;
     background-color: #5f5f5f;
@@ -143,6 +166,8 @@ input[type = "submit"] {
 
 .width100 {
     width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .topic {
@@ -189,6 +214,13 @@ input[type = "submit"] {
     box-sizing: border-box;
 }
 
+.workSpaceWidth {
+    width: 700px;
+    margin: auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .anchorBottom {
     position: absolute;
     left: 0;
@@ -203,6 +235,15 @@ input[type = "submit"] {
     border-bottom: 1px solid #3c3c3c;
     margin-top: 6px;
     margin-bottom: 6px;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 18pt;
+    color: #1e1e1e;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #calendarSpace {

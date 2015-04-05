@@ -1,13 +1,18 @@
 /**
  * Created by Nikolay Teplyakov on 29.03.2015.
  */
+hoverBool = false;
 
 $(document).ready(function(){
     date = new Date();
     createCalendar('calendarSpace', date.getFullYear(), date.getMonth());
 
-    $("#slidingBottom").click(function(){
+    $("#slidingBottom").click(function () {
         $("#slidingSpace").slideToggle();
+    });
+
+    $("#hoverIdentifier").hover(function () {
+        animateHoverOpacity(this, 0.3, 300);
     });
 });
 
@@ -36,4 +41,16 @@ function getDay(date) {
         day = 7;
     }
     return day - 1;
+}
+
+function animateHoverOpacity(object, deltay, delay) {
+    if (!hoverBool) {
+        $(object).animate({opacity: deltay}, delay, function() {
+            hoverBool = true;
+        });
+    } else {
+        $(object).animate({opacity: 1.0}, delay, function() {
+            hoverBool = false;
+        });
+    }
 }
