@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="application/css/main.css">
     <script type="text/javascript" src="application/js/jquery.js"></script>
     <script type="text/javascript" src="application/js/main.js"></script>
+    <script type="text/javascript" src="application/js/Validate.js"></script>
+    <script type="text/javascript" src="application/js/Error.js"></script>
     <title></title>
 </head>
 <body>
@@ -18,5 +20,8 @@ include_once 'topmenu.php';
         <?php include_once 'template.php'; ?>
     </div>
 </div>
+<?php
+include_once 'nullwnd.php';
+?>
 </body>
 </html>

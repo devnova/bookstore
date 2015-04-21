@@ -108,6 +108,35 @@ input[type = "submit"] {
     text-decoration: none;
 }
 
+.nullWnd {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nullWndClose {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.window {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    vertical-align: middle;
+    background-color: #323236;
+    border-radius: 6px;
+    border: 1px solid #222222;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
 .oneLine li {
     display: inline;
 }
